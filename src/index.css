@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Create a container that uses Flexbox */
+.container {
+  display: flex;
+  flex-direction: column; /* or 'row' depending on your design */
+  align-items: center; /* Center items horizontally */
+}

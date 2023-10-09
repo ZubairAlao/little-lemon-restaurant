@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Define styles for individual elements */
+.header {
+  background-color: #f0f0f0;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+nav li {
+  display: inline; /* Display items horizontally */
+  margin-right: 20px; /* Add some spacing between items */
+}
+
+/* Style the links (<a>) */
+nav a {
+  text-decoration: none; /* Remove underlines from links */
+  color: rgb(24, 24, 23); /* Text color for links */
+  font-weight: bold;
+}
+
+/* Define styles for hover effect on links */
+nav a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.main-content {
+  background-color: #ffffff;
+  padding: 20px;
+  flex-grow: 1; /* Grow to fill available space */
+  min-height: calc(100vh - 180px); /* Minimum height to fill the viewport */
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
 }
