@@ -23,12 +23,12 @@ function Nav() {
         />
       </div>
       <ul className={navLinksClass}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="about">About</Link></li>
-        <li><Link to="menus">Menus</Link></li>
-        <li><Link to="booking-page">Reservations</Link></li>
-        <li><Link to="order-online">Order Online</Link></li>
-        <li><Link to="login">Login</Link></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="menus">Menus</a></li>
+        <li><a href="booking-page">Reservations</a></li>
+        <li><a href="order-online">Order Online</a></li>
+        <li><a href="login">Login</a></li>
       </ul>
     </nav>
   );

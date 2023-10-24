@@ -1,50 +1,30 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen,fireEvent } from '@testing-library/react';
+import App from "./App"
 import BookingForm from './components/BookingForm';
 import BookingPage from './components/BookingPage';
+import Main from './components/Main';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
 
-test('Renders the BookingForm heading', () => {
-    render(<BookingForm />);
-    const headingElement = screen.getByText("Book Now");
-    expect(headingElement).toBeInTheDocument();
+
+test('Renders the Booking Form heading', () => {
+  render(<BookingForm />);
+  const headingElement = screen.getByText("Number of guests");
+  expect(headingElement).toBeInTheDocument();
 })
 
-test('initializeTimes should return the correct value', () => {
-  const date = '2023-10-16';
-  const expectedAvailableTimes = [
-    '17:00',
-    '18:00',
-    '19:00',
-    '20:00',
-    '21:00',
-    '22:00',
-  ];
+test('initializeTimes fetches available times', () => {
+  // Mock the fetchAPI function to return a sample array of available times
+  const mockFetchAPI = jest.fn(() => ['17:00', '17:30', '18:00']);
 
-  const result = BookingPage.prototype.initializeTimes(date);
-  expect(result).toEqual(expectedAvailableTimes);
+  // Render the Main component with the mocked fetchAPI function
+  render(<Main />);
+  
+  // Assert that the fetchAPI function was called with the current date
+  expect(mockFetchAPI).toHaveBeenCalledWith(new Date());
+
+  // You can also assert other things based on the expected behavior
+  // For example, you can check if the Main component displays the fetched times.
 });
-
-test('updateTimes should return the same value provided in the state', () => {
-  const selectedDate = '2023-10-16';
-  const expectedAvailableTimes = [
-    '17:00',
-    '18:00',
-    '19:00',
-    '20:00',
-    '21:00',
-    '22:00',
-  ];
-
-  const result = BookingPage.prototype.updateTimes(selectedDate, expectedAvailableTimes);
-  expect(result).toEqual(expectedAvailableTimes);
-});
-
 
 
 

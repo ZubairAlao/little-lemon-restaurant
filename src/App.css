@@ -62,8 +62,13 @@ nav a:hover {
     list-style-type: none; /* Remove bullet points */
   }
 
+  nav a {
+    color: #fff;
+  }
   .nav-links.open {
-    display: block; /* Show the menu when the 'open' class is applied */
+    display: flex; /* Show the menu when the 'open' class is applied */
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav-links li {
