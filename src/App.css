@@ -15,39 +15,39 @@
   font-size: 24px;
 }
 
-/* CSS (your-css-file.css) */
+
 nav ul {
-  list-style-type: none; /* Remove bullet points */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
 }
 
 nav li {
-  display: inline; /* Display items horizontally */
-  margin-right: 20px; /* Add some spacing between items */
+  display: inline; 
+  margin-right: 20px; 
 }
 
 /* Style the links (<a>) */
 nav a {
-  text-decoration: none; /* Remove underlines from links */
-  color: rgb(24, 24, 23); /* Text color for links */
+  text-decoration: none; 
+  color: rgb(24, 24, 23); 
   font-weight: bold;
 }
 
-/* Define styles for hover effect on links */
+
 nav a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
   /* Apply styles for mobile devices */
   .menu-toggle {
     display: block;
-    cursor: pointer; /* Add pointer cursor to indicate interactivity */
+    cursor: pointer; 
   }
 
   .toggle-icon {
-    width: 24px; /* Set the width and height to match your image dimensions */
+    width: 24px;
     height: 24px;
   }
 
@@ -59,7 +59,7 @@ nav a:hover {
     background-color: #333;
     width: 100%;
     padding: 10px;
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none; 
   }
 
   nav a {
@@ -72,7 +72,7 @@ nav a:hover {
   }
 
   .nav-links li {
-    margin-bottom: 10px; /* Add spacing between menu items */
+    margin-bottom: 10px;
   }
 }
 
@@ -229,8 +229,8 @@ nav a:hover {
 
 .specials-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Default to a single column on smaller screens */
-  gap: 20px; /* Adjust the gap between cards */
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
 }
 
 .special-card {
@@ -239,7 +239,7 @@ nav a:hover {
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
-  background-color: #fff; /* Background color for each card */
+  background-color: #fff;
 }
 
 .special-card img {
@@ -262,7 +262,7 @@ nav a:hover {
 }
 
 .special-details button {
-  background-color: #f4ce14; /* Adjust the button style */
+  background-color: #f4ce14; 
   color: #000;
   padding: 10px 20px;
   border: none;
@@ -272,7 +272,7 @@ nav a:hover {
 }
 
 .special-details button:hover {
-  background-color: #333333; /* Adjust the button hover color */
+  background-color: #333333;
   color: white;
 }
 
@@ -292,13 +292,13 @@ nav a:hover {
 
 @media screen and (min-width: 768px) {
   .specials-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium-sized screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media screen and (min-width: 1024px) {
   .specials-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
@@ -340,7 +340,7 @@ nav a:hover {
   position: absolute;
   top: 0;
   right: 80px;
-  top: 80px; /* Adjust as needed to move it to the right */
+  top: 80px; 
   z-index: 2;
 }
 
@@ -361,7 +361,7 @@ nav a:hover {
 }
 
 
-/* Footer.css */
+/* Footer */
 .footer-background {
   background-color: #495e57;
   color: #fff;
@@ -456,8 +456,8 @@ ul li {
 
 .review-container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Default to a single column on smaller screens */
-  gap: 20px; /* Adjust the gap between cards */
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
 }
 
 .review {
@@ -467,7 +467,7 @@ ul li {
   padding: 20px;
   gap: 5px;
   text-align: center;
-  background-color: #fff; /* Background color for each card */
+  background-color: #fff;
 }
 
 .review img {
@@ -487,13 +487,13 @@ ul li {
 
 @media screen and (min-width: 768px) {
   .review-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium-sized screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .review-container {
-    grid-template-columns: repeat(4, 1fr); /* 3 columns on large screens */
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

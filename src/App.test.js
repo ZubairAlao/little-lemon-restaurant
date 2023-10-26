@@ -18,12 +18,9 @@ test('initializeTimes fetches available times', () => {
 
   // Render the Main component with the mocked fetchAPI function
   render(<Main />);
-  
+
   // Assert that the fetchAPI function was called with the current date
   expect(mockFetchAPI).toHaveBeenCalledWith(new Date());
-
-  // You can also assert other things based on the expected behavior
-  // For example, you can check if the Main component displays the fetched times.
 });
 
 
