@@ -1,6 +1,7 @@
 // Updated React Component
 import React from 'react';
 import CallToActionImg from '../assets/lemon-dessert.jpg';
+import { Link } from 'react-router-dom';
 
 function CallToAction() {
   return (
@@ -12,7 +13,9 @@ function CallToAction() {
           <p>
             We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
           </p>
+          <Link to="/booking-page">
           <button className="btn">Reserve a Table</button>
+          </Link>
         </div>
         <div className="cta-right">
           <div className="image-box">

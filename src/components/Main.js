@@ -1,8 +1,8 @@
 import React, { useReducer } from 'react'
 import BookingPage from './BookingPage';
-import ConfirmBooking from "./ConfirmBooking";
+import ConfirmedBooking from "./ConfirmedBooking";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useNavigate, redirect } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import HomePage from './HomePage';
 
 
@@ -53,17 +53,16 @@ function Main() {
             navigate("/confirmed")
         }
     }
-    
 
   return (
     <main>
-        <Router>
+        
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/booking-page" element={<BookingPage availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
-                <Route path="/confirmed" element={<ConfirmBooking/> } />
+                <Route path="/confirmed" element={<ConfirmedBooking/> } />
             </Routes>
-        </Router>
+        
     </main>
   )
 }
